@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Complete a Frase</title>
+</head>
+<body>
+    <div id="start-screen">
+        <img src="C:\Users\Elisangela\Downloads\Jogo (1).jpg" alt="Imagem de Fundo">
+        <button onclick="startGame()">Iniciar Jogo</button>
+    </div>
+
+    <div id="game-screen" style="display:none;">
+        <div id="question-container"></div>
+        <div id="options-container"></div>
+        <button onclick="nextQuestion()">Próxima Frase</button>
+    </div>
+
+    <div id="result-screen" style="display:none;">
+        <p id="result-message"></p>
+        <p id="total-coins"></p>
+    </div>
+
+    <script src="jogo.js"></script>
+</body>
+</html>
