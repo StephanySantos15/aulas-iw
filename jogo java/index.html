@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Perguntas e Respostas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img id="background" src="C:\Users\Elisangela\Downloads\CRIA (4).png" alt="Background Image">
+    
+    <div id="userInputContainer">
+        <label for="userName">Nome do Usuário:</label>
+        <input type="text" id="userName" placeholder="Digite seu nome">
+
+        <label for="schoolName">Nome da Escola:</label>
+        <input type="text" id="schoolName" placeholder="Digite o nome da escola">
+
+        <button id="startButton" onclick="startGame()">Iniciar Jogo</button>
+    </div>
+
+    <div id="gameContainer" style="display: none;">
+        <!-- Restante do seu código permanece inalterado -->
+        <div id="questionBackground"></div>
+        <div id="questionContainer"></div>
+        <div id="timer">Tempo restante: <span id="countdown">10</span> segundos</div>
+        <div id="coins">Moedas: <span id="coinCount">0</span></div>
+    </div>
+
+    <div id="endScreen" class="screen scoreBackground" style="display: none;">
+        <!-- ... conteúdo da tela de pontuação final ... -->
+    </div>
+    
+
+    <script src="jogo.js"></script>
+</body>
+</html>
